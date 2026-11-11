@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { ArrowRight, Check, HandCoins, HeartHandshake, Sparkles, Users } from 'lucide-react'
 import { bankDetails, donationOptions, waysToHelp } from '../data/content'
+import { images } from '../data/images'
 import { usePageMeta } from '../hooks/usePageMeta'
 
 const helpIcons = [HandCoins, Users, Sparkles, HeartHandshake, Check]
@@ -11,9 +12,17 @@ export function GetInvolvedPage() {
 
   return (
     <div className="page-shell py-10">
-      <section>
-        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-primary/80">Get involved</p>
-        <h1 className="mt-4 font-serif text-5xl text-ink md:text-6xl">Your support can change a life.</h1>
+      <section className="grid items-center gap-8 lg:grid-cols-[1fr_0.9fr]">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-primary/80">Get involved</p>
+          <h1 className="mt-4 font-serif text-5xl text-ink md:text-6xl">Your support can change a life.</h1>
+          <p className="mt-5 max-w-2xl text-lg leading-8 text-muted">
+            Join hands with communities through giving, volunteering, and sharing opportunities.
+          </p>
+        </div>
+        <div className="overflow-hidden rounded-[2.5rem] border border-border bg-surface-alt p-3">
+          <img src={images.fieldCommunityRelief} alt="A family receiving essential community support" className="h-[300px] w-full rounded-[2rem] object-cover md:h-[360px]" loading="lazy" />
+        </div>
       </section>
 
       <section className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-5">

@@ -374,6 +374,18 @@ export const galleryItems = [
   { title: 'Community gathering', category: 'Education', image: 'galleryCommunity' },
   { title: 'Digital awareness workshop', category: 'Technology', image: 'galleryDigital' },
   { title: 'Women entrepreneurship', category: 'Women', image: 'galleryBusiness' },
+  { title: 'Young learners studying together', category: 'Education', image: 'fieldEducation' },
+  { title: 'Students at a local learning center', category: 'Education', image: 'fieldSchool' },
+  { title: 'Young learners at school', category: 'Education', image: 'fieldStudents' },
+  { title: 'Household essentials distribution', category: 'Food', image: 'fieldFoodRelief' },
+  { title: 'Food support for local families', category: 'Food', image: 'fieldFoodReliefWide' },
+  { title: 'Community blanket support', category: 'Community Support', image: 'fieldBlanketSupport' },
+  { title: 'Families receiving essential supplies', category: 'Community Support', image: 'fieldBlanketDistribution' },
+  { title: 'Sewing skills for home-based work', category: 'Livelihoods', image: 'fieldLivelihoodSewing' },
+  { title: 'A community support visit', category: 'Community Support', image: 'fieldCommunityRelief' },
+  { title: 'Sewing machine livelihood support', category: 'Livelihoods', image: 'fieldSewingSupport' },
+  { title: 'Tools for a new livelihood', category: 'Livelihoods', image: 'fieldLivelihoodFamily' },
+  { title: 'Sewing tools and materials', category: 'Livelihoods', image: 'fieldSewingCloseup' },
 ] as const
 
 export const footerLinks = {

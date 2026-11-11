@@ -12,7 +12,7 @@ export function AboutPage() {
     <div>
       <section className="page-shell py-10 md:py-12">
         <div className="overflow-hidden rounded-[2.5rem] border border-border bg-surface-alt p-3">
-          <img src={images.aboutHeader} alt="Community gathering and support" className="h-[360px] w-full rounded-[2rem] object-cover md:h-[460px]" loading="lazy" />
+          <img src={images.fieldFoodReliefWide} alt="Community families receiving essential food support" className="h-[360px] w-full rounded-[2rem] object-cover md:h-[460px]" loading="lazy" />
         </div>
       </section>
 

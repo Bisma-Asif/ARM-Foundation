@@ -80,6 +80,9 @@ export function HomePage() {
             <div className="arch-visual relative overflow-hidden rounded-[2.5rem] border border-border bg-surface-alt p-4 shadow-[0_18px_38px_rgba(24,32,30,0.08)]">
               <img src={images.heroMain} alt="Community learning together" className="h-[520px] w-full rounded-[2rem] object-cover" loading="lazy" />
             </div>
+            <div className="absolute bottom-8 right-3 hidden w-40 overflow-hidden rounded-2xl border-4 border-paper shadow-[0_16px_30px_rgba(19,23,22,0.16)] sm:block md:w-48">
+              <img src={images.fieldSchool} alt="Students at a local learning center" className="h-32 w-full object-cover md:h-36" loading="lazy" />
+            </div>
             <div className="absolute -bottom-4 left-4 w-[210px] rounded-2xl border border-border bg-paper/90 p-3 shadow-[0_16px_22px_rgba(19,23,22,0.08)] backdrop-blur-sm">
               <p className="text-xs uppercase tracking-[0.2em] text-muted">Community care</p>
               <p className="mt-2 font-serif text-2xl text-ink">92%</p>

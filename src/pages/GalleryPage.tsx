@@ -4,7 +4,7 @@ import { galleryItems } from '../data/content'
 import { images } from '../data/images'
 import { usePageMeta } from '../hooks/usePageMeta'
 
-const categories = ['All', 'Education', 'Health', 'Women', 'Technology', 'Environment', 'Food']
+const categories = ['All', 'Education', 'Health', 'Women', 'Technology', 'Environment', 'Food', 'Community Support', 'Livelihoods']
 
 export function GalleryPage() {
   usePageMeta('gallery')

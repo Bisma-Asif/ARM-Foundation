@@ -1,6 +1,7 @@
 import { BarChart3 } from 'lucide-react'
 import { impactGoals } from '../data/content'
 import { StatCounter } from '../components/StatCounter'
+import { images } from '../data/images'
 import { usePageMeta } from '../hooks/usePageMeta'
 
 const sdgMap = [
@@ -21,9 +22,17 @@ export function ImpactPage() {
 
   return (
     <div className="page-shell py-10">
-      <section>
-        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-primary/80">Impact & SDGs</p>
-        <h1 className="mt-4 font-serif text-5xl text-ink md:text-6xl">5-year goals for resilient communities</h1>
+      <section className="grid items-center gap-8 lg:grid-cols-[1fr_0.85fr]">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-primary/80">Impact & SDGs</p>
+          <h1 className="mt-4 font-serif text-5xl text-ink md:text-6xl">5-year goals for resilient communities</h1>
+          <p className="mt-5 max-w-2xl text-lg leading-8 text-muted">
+            Progress begins when communities learn, collaborate, and build practical opportunities together.
+          </p>
+        </div>
+        <div className="overflow-hidden rounded-[2.5rem] border border-border bg-surface-alt p-3">
+          <img src={images.fieldStudents} alt="Young learners at a local school" className="h-[300px] w-full rounded-[2rem] object-cover md:h-[360px]" loading="lazy" />
+        </div>
       </section>
 
       <section className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
