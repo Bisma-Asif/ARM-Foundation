@@ -26,11 +26,19 @@ export const pageMeta = {
     title: 'Ali Raza Mujtaba Digital Empowerment Program',
     description: 'A flagship digital literacy and skills initiative creating pathways for youth, women, and communities to learn and earn.',
   },
+  'digital-empowerment': {
+    title: 'Ali Raza Mujtaba Digital Empowerment Program',
+    description: 'A flagship digital literacy and skills initiative creating pathways for youth, women, and communities to learn and earn.',
+  },
   impact: {
     title: 'Impact & SDGs',
     description: 'Review our five-year goals and alignment with the Sustainable Development Goals.',
   },
   getInvolved: {
+    title: 'Get Involved',
+    description: 'Support our mission through donations, volunteering, sponsorships, and partnerships.',
+  },
+  'get-involved': {
     title: 'Get Involved',
     description: 'Support our mission through donations, volunteering, sponsorships, and partnerships.',
   },
@@ -431,8 +439,10 @@ export const pageIntroBreadcrumbs = {
   about: 'About us',
   programs: 'Programs',
   flagship: 'Flagship initiative',
+  'digital-empowerment': 'Digital empowerment',
   impact: 'Impact & SDGs',
   getInvolved: 'Get involved',
+  'get-involved': 'Get involved',
   gallery: 'Gallery',
   contact: 'Contact',
 } as const
