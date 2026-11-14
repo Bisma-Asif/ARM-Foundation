@@ -16,8 +16,6 @@ import { useEffect, useState } from 'react'
 import { Link, NavLink, Route, Routes, useLocation } from 'react-router-dom'
 import { footerLinks, navLinks, pageIntroBreadcrumbs, socialLinks, contactDetails } from '../data/content'
 import { AboutPage } from '../pages/AboutPage'
-
-const currentYear = new Date().getFullYear()
 import { ContactPage } from '../pages/ContactPage'
 import { FlagshipPage } from '../pages/FlagshipPage'
 import { GalleryPage } from '../pages/GalleryPage'
@@ -26,6 +24,9 @@ import { HomePage } from '../pages/HomePage'
 import { ImpactPage } from '../pages/ImpactPage'
 import { NotFoundPage } from '../pages/NotFoundPage'
 import { ProgramsPage } from '../pages/ProgramsPage'
+
+const currentYear = new Date().getFullYear()
+const brandName = 'Ali Raza Foundation'
 
 function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
   return (
@@ -46,11 +47,11 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
             aria-label="Mobile navigation"
           >
             <div className="mb-8 flex items-center justify-between">
-              <Link to="/" className="flex items-center gap-3 text-ink" aria-label="ARM Foundation home">
+              <Link to="/" className="flex items-center gap-3 text-ink" aria-label="Ali Raza Foundation home">
                 <span className="flex h-9 w-9 items-center justify-center rounded-full border border-primary/20 bg-surface-alt font-serif text-base font-bold text-primary">
-                  ARM
+                  AR
                 </span>
-                <span className="font-serif text-xl tracking-tight">ARM Foundation</span>
+                <span className="font-serif text-lg font-bold tracking-tight sm:text-xl">{brandName}</span>
               </Link>
               <button type="button" aria-label="Close menu" onClick={onClose} className="rounded-full border border-border p-2">
                 <X size={18} />
@@ -112,11 +113,11 @@ export function Layout() {
         }`}
       >
         <div className="page-shell flex items-center justify-between py-4">
-          <Link to="/" className="flex items-center gap-3 text-ink" aria-label="ARM Foundation home">
+          <Link to="/" className="flex items-center gap-3 text-ink" aria-label="Ali Raza Foundation home">
             <span className="flex h-10 w-10 items-center justify-center rounded-full border border-primary/20 bg-surface-alt font-serif text-lg font-bold text-primary">
-              ARM
+              AR
             </span>
-            <span className="hidden font-serif text-2xl tracking-tight sm:inline">ARM Foundation</span>
+            <span className="hidden font-serif text-[1.6rem] font-bold tracking-tight sm:inline">{brandName}</span>
           </Link>
 
           <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary navigation">
@@ -182,9 +183,9 @@ export function Layout() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3">
               <span className="flex h-10 w-10 items-center justify-center rounded-full border border-primary/20 bg-paper font-serif text-lg font-bold text-primary">
-                ARM
+                AR
               </span>
-              <span className="font-serif text-2xl tracking-tight text-ink">ARM Foundation</span>
+              <span className="font-serif text-2xl font-bold tracking-tight text-ink sm:text-[1.8rem]">{brandName}</span>
             </div>
             <p className="mt-5 max-w-md text-base leading-7 text-muted">
               We work with compassion and practical purpose to strengthen communities through education, health, digital empowerment, and sustainable care.
@@ -230,7 +231,7 @@ export function Layout() {
 
         <div className="border-t border-border">
           <div className="page-shell flex flex-col items-center justify-between gap-4 py-5 text-sm text-muted md:flex-row">
-            <p>© {currentYear} ARM Foundation. All rights reserved.</p>
+            <p>© {currentYear} {brandName}. All rights reserved.</p>
             <div className="flex items-center gap-4 text-ink">
               {socialLinks.map((social) => {
                 const Icon = social.label === 'Facebook' ? Globe : social.label === 'Instagram' ? MessageCircle : Users

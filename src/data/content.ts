@@ -10,13 +10,13 @@ export const navLinks = [
 
 export const pageMeta = {
   home: {
-    title: 'ARM Foundation | Empowering Communities, One Life at a Time',
+    title: 'Ali Raza Foundation | Empowering Communities, One Life at a Time',
     description:
-      'Ali Raza Mujtaba Foundation creates sustainable impact through education, health, digital empowerment, and community care.',
+      'Ali Raza Foundation creates sustainable impact through education, health, digital empowerment, and community care.',
   },
   about: {
-    title: 'About ARM Foundation',
-    description: 'Learn about the mission, values, and strategic pillars guiding Ali Raza Mujtaba Foundation.',
+    title: 'About Ali Raza Foundation',
+    description: 'Learn about the mission, values, and strategic pillars guiding Ali Raza Foundation.',
   },
   programs: {
     title: 'Programs',
@@ -44,11 +44,11 @@ export const pageMeta = {
   },
   gallery: {
     title: 'Gallery & Stories',
-    description: 'A glimpse into the communities, programs, and stories of change at ARM Foundation.',
+    description: 'A glimpse into the communities, programs, and stories of change at Ali Raza Foundation.',
   },
   contact: {
     title: 'Contact Us',
-    description: 'Get in touch with ARM Foundation to learn more, collaborate, or support our mission.',
+    description: 'Get in touch with Ali Raza Foundation to learn more, collaborate, or support our mission.',
   },
 } as const
 
@@ -60,7 +60,7 @@ export const trustStats = [
 ] as const
 
 export const homeHero = {
-  eyebrow: 'Ali Raza Mujtaba Foundation',
+  eyebrow: 'Ali Raza Foundation',
   title: 'Empowering communities, one life at a time.',
   subtitle:
     'Empowering communities through education, health, technology, and sustainable development to create a more inclusive, resilient, and prosperous society.',
