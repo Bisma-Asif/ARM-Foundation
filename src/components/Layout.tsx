@@ -26,7 +26,7 @@ import { NotFoundPage } from '../pages/NotFoundPage'
 import { ProgramsPage } from '../pages/ProgramsPage'
 
 const currentYear = new Date().getFullYear()
-const brandName = 'Ali Raza Foundation'
+const brandName = 'Ali Raza Mujtaba Foundation'
 
 function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
   return (
